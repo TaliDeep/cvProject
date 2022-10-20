@@ -62,9 +62,7 @@
         {
           "builder": "@angular-devkit/build-angular:dev-server",
           "options": {
-            "browserTarget": "cvProject:build",
-            "host":"0.0.0.0",
-            "port":1738
+            "browserTarget": "cvProject:build"
           },
           "configurations": {
             "production": {
