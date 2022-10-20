@@ -6,3 +6,12 @@
     margin-right: auto;
     margin-left: auto;
 }
+
+.description {
+    color: white;
+}
+
+img { 
+    border-radius: 50%;
+    float: right;
+}
