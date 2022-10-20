@@ -8,6 +8,7 @@ import { ContactsComponent } from './contacts/contacts.component';
 import { AboutComponent } from './about/about.component';
 import { WorkexperienceComponent } from './workexperience/workexperience.component';
 import { BackgroundComponent } from './background/background.component';
+import { NavBarComponent } from './nav-bar/nav-bar.component';
 
 @NgModule({
   declarations: [
@@ -16,7 +17,8 @@ import { BackgroundComponent } from './background/background.component';
     ContactsComponent,
     AboutComponent,
     WorkexperienceComponent,
-    BackgroundComponent
+    BackgroundComponent,
+    NavBarComponent
   ],
   imports: [
     BrowserModule,
