@@ -31,7 +31,7 @@ img {
     float: left; 
     width: 50%;
     font-family: 'Roboto', sans-serif;
-
+    margin-top: 100px;
 }
 
 .description-name {
@@ -50,7 +50,7 @@ img {
     margin-bottom: 30px;
 }
 
-.description-mail {
+#description-mail {
     /* display: flex; */
     cursor: pointer;
     background-color: transparent;
@@ -62,7 +62,7 @@ img {
     
 }
 
-.description-number {
+#description-number {
     display: flex;
     margin: 10px 0;
     font-size: 14px;
@@ -73,7 +73,7 @@ img {
     background-color: transparent;
 }
 
-.description-address {
+#description-address {
     display: flex;
     margin: 10px 0;
     font-size: 14px;
@@ -114,6 +114,3 @@ a {
     color: #2196F3;
 }
 
-#mail:hover .fa:hover {
-    color: #2196F3;
-}
