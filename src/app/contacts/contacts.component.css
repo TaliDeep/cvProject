@@ -51,6 +51,7 @@ img {
 }
 
 .description-mail {
+    /* display: flex; */
     cursor: pointer;
     background-color: transparent;
     padding: 0px;
@@ -62,6 +63,7 @@ img {
 }
 
 .description-number {
+    display: flex;
     margin: 10px 0;
     font-size: 14px;
     line-height: 24px;
@@ -72,6 +74,7 @@ img {
 }
 
 .description-address {
+    display: flex;
     margin: 10px 0;
     font-size: 14px;
     line-height: 24px;
@@ -88,13 +91,29 @@ ul {
     padding: 0px;
     background-color: transparent;
     margin-top: 20px;
-    
+    list-style-type: none;
 }
 a {
     color: white;
     text-decoration: none !important;
 }
 
-.mail-icon {
+
+.phone-icon {
     font-size: 22px;
+    margin-right: 5px;
+}
+
+.fa {
+    color: white;
+    font-size: 22px;
+    margin-right: 5px;
+}
+
+.fa:hover {
+    color: #2196F3;
+}
+
+#mail:hover .fa:hover {
+    color: #2196F3;
 }
