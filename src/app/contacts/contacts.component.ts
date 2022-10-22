@@ -15,42 +15,31 @@ export class ContactsComponent implements OnInit {
     this.changecolorOfAddress();
   }
 
-  private changecolorOfMail () {
+  private changecolorOfMail() {
     var first = document.getElementById('description-mail');
     var sec = document.getElementsByClassName('fa')[0] as HTMLElement;
-    if (sec != null) {
-      first.onmouseover = () => {
-        sec.style.color = '#2196F3';  
-      }
-      first.onmouseleave = () => {
-        sec.style.color = 'white';  
-      }
-    }
+    this.onmouse(first, sec);
   }
 
-  private changecolorOfNumber () {
+  private changecolorOfNumber() {
     var first = document.getElementById('description-number');
     var sec = document.getElementsByClassName('fa')[1] as HTMLElement;
-    if (sec != null) {
-      first.onmouseover = () => {
-        sec.style.color = '#2196F3';  
-      }
-      first.onmouseleave = () => {
-        sec.style.color = 'white';  
-      }
-    }
+    this.onmouse(first, sec);
   }
 
-  private changecolorOfAddress () {
+  private changecolorOfAddress() {
     var first = document.getElementById('description-address');
     var sec = document.getElementsByClassName('fa')[2] as HTMLElement;
-    if (sec != null) {
-      first.onmouseover = () => {
-        sec.style.color = '#2196F3';  
-      }
-      first.onmouseleave = () => {
-        sec.style.color = 'white';  
-      }
+    this.onmouse(first, sec);
+  }
+
+  private onmouse(first, sec) {
+    first.onmouseover = () => {
+      sec.style.color = '#2196F3';  
     }
+    first.onmouseleave = () => {
+      sec.style.color = 'white';  
+    }
+
   }
 }

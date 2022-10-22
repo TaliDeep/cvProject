@@ -114,3 +114,88 @@ a {
     color: #2196F3;
 }
 
+.fa-facebook:hover {
+    opacity: 0.7;
+    background: white;
+    color: #2196F3;
+}
+
+.fa-facebook {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: white;
+    font-size: 18px;
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+
+}
+.fa-github:hover {
+    opacity: 0.7;
+    background: white;
+    color: #2196F3;
+}
+
+.fa-github {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: white;
+    font-size: 18px;
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+
+}
+
+
+.fa-linkedin-square:hover {
+    opacity: 0.7;
+    background: white;
+    color: #2196F3;
+}
+
+.fa-linkedin-square {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: white;
+    font-size: 18px;
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+
+}
+.fa-instagram:hover {
+    opacity: 0.7;
+    background: white;
+    color: #2196F3;
+}
+
+.fa-instagram {
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+    color: white;
+    font-size: 18px;
+    height: 38px;
+    width: 38px;
+    border-radius: 3px;
+
+}
+
+.icons-size {
+    display: flex;
+    align-items: center;
+    height: 58px;
+    width: 208px;
+}
