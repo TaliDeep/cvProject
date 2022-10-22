@@ -3,3 +3,7 @@
     width: 100%;
     /* background-color: #331a8b; */
 }
+.row {
+    align-items: center;
+    color: white;
+}
