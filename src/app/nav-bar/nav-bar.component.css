@@ -1,9 +1,81 @@
 .top-bar-color {
-    height: 83px;
-    width: 100%;
-    /* background-color: #331a8b; */
+    flex-basis: auto;
+    padding: 8px 16px;
+
 }
 .row {
+    display: flex;
     align-items: center;
+    flex-direction: row;
     color: white;
+    height: 63px;
+    width: 960px;
+
 }
+.title-position {
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+    margin-left: auto!important;
+    margin-right: 0!important;
+}
+
+.titles {
+    color: white;
+    display: block;
+    padding: 0.5rem 0;
+
+    border-bottom: 1px solid transparent;
+    font-weight: bold;
+    font-family: "roboto", sans-serif;
+    font-size: 18px;
+    opacity: 1;
+    line-height: 30px;
+}
+
+.titles:hover {
+    color: #2196F3;
+    -webkit-transition: color 0.4s;
+    -moz-transition:    color 0.4s;
+    -ms-transition:     color 0.4s;
+    -o-transition:      color 0.4s;
+    transition:         color 0.4s;
+}
+
+li {
+    float: left;
+    list-style-type: none;
+    display: list-item;
+    padding: 1rem;
+}
+
+.logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    border-radius: 3px;
+    height: 29px;
+    background-color: green;
+}
+
+label > input{ /* HIDE RADIO */
+    visibility: hidden; /* Makes input not-clickable */
+    position: absolute; /* Remove input from document flow */
+}
+label > input + .titles{ /* DIV STYLES */
+    /* cursor:pointer;
+    border:2px solid transparent; */
+}
+label > input:checked + .titles{ /* (RADIO CHECKED) DIV STYLES */
+    border-bottom: 1px solid white;
+}
+
+@media (max-width: 794px) {
+    .row {
+      display: none
+    }
+  }
+  

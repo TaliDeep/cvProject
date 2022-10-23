@@ -7,9 +7,14 @@ import { Component, OnInit } from '@angular/core';
 })
 export class NavBarComponent implements OnInit {
 
+  private showTopBar: any = true;
+
   constructor() { }
 
   ngOnInit(): void {
+    this.showTopBar = window.innerWidth;
+    console.log(this.showTopBar);
+    
   }
 
 }
