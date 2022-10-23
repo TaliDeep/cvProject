@@ -13,8 +13,10 @@ export class NavBarComponent implements OnInit {
 
   ngOnInit(): void {
     this.showTopBar = window.innerWidth;
-    console.log(this.showTopBar);
-    
   }
 
+  public scrollToTop () {
+    document.documentElement.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+
+  }
 }

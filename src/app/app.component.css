@@ -1,4 +1,6 @@
+html {
+    scroll-behavior: smooth;
+}
 .navbar-position {
     margin: auto;
-    max-width: 1140px;
 }

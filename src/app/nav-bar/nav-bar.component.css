@@ -1,16 +1,20 @@
-.top-bar-color {
-    flex-basis: auto;
-    padding: 8px 16px;
 
+.top-bar-color {
+    position: fixed;
+    flex-basis: auto;
+    padding: 8px 0px;
+    margin: auto;
+    width: 100%;
+    scroll-behavior: smooth;
 }
 .row {
+    margin: auto;
     display: flex;
     align-items: center;
     flex-direction: row;
     color: white;
     height: 63px;
-    width: 960px;
-
+    max-width: 1140px;
 }
 .title-position {
     margin-block-start: 1em;
@@ -71,6 +75,10 @@ label > input + .titles{ /* DIV STYLES */
 }
 label > input:checked + .titles{ /* (RADIO CHECKED) DIV STYLES */
     border-bottom: 1px solid white;
+}
+
+a {
+    text-decoration:none;
 }
 
 @media (max-width: 794px) {
