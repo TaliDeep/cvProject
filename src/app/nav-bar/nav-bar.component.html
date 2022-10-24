@@ -1,17 +1,18 @@
 
-<div class="top-bar-color">
+<nav class="top-bar-color">
+
     <div class="row">
-        <div class="logo">MD</div>
+        <div (click)="scrollToTop()" class="logo">Mehmet</div>
         <ul class="title-position">
             <li>
                 <label class="labl">
-                    <input type="radio" name="radioname" value="one_value" checked="checked"/>
+                    <input id="home" type="radio" name="radioname" value="one_value" checked="checked"/>
                     <a (click)="scrollToTop()" href="#home" class="titles">Home</a>
                 </label>
             </li>
             <li>
                 <label class="labl">
-                    <input type="radio" name="radioname" value="two_value" />
+                    <input id="about" type="radio" name="radioname" value="two_value" />
                     <a href="#about" class="titles">About</a>
                 </label>
             </li>
@@ -34,4 +35,5 @@
                 </label>
             </li> -->
         </ul>
-</div>
+    </div>
+</nav>
