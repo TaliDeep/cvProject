@@ -27,14 +27,14 @@ export class NavBarComponent implements OnInit {
     }
 
     if(window.scrollY >= 0 && window.scrollY <= 658) {
-      var element = <HTMLInputElement> document.getElementById("home");
+      var element = <HTMLInputElement> document.getElementById("home1");
       if(!element.checked) {
         element.checked = true;
       }
     }
 
     if(window.scrollY >= 389 && window.scrollY <= 659) {
-      var element = <HTMLInputElement> document.getElementById("about");
+      var element = <HTMLInputElement> document.getElementById("about1");
       if(!element.checked) {
         element.checked = true;
       }
