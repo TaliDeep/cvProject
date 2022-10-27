@@ -86,11 +86,20 @@ a {
     text-decoration:none;
 }
 
+.top-bar-mobile {
+    display: none;
+}
+
 @media (max-width: 794px) {
     .row {
       display: none
     }
-  }
-  .navbar-fixed-top.scrolled .nav-link {
+    .top-bar-mobile {
+        display: initial;
+    }
+}
+  /* .navbar-fixed-top.scrolled .nav-link {
     color:#555;
-  }
+  } */
+
+
