@@ -15,7 +15,11 @@ export class NavBarComponent implements OnInit {
 
   public scrollToTop () {
     document.documentElement.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+  }
 
+  public scrollToAbout () {
+    var element = <HTMLInputElement> document.getElementById("about");
+    element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
   }
 
   scroll = (): void => {
@@ -26,14 +30,14 @@ export class NavBarComponent implements OnInit {
       document.body.style.setProperty('--navbar-color', "#202026");
     }
 
-    if(window.scrollY >= 0 && window.scrollY <= 658) {
+    if(window.scrollY >= 0 && window.scrollY <= 389) {
       var element = <HTMLInputElement> document.getElementById("home1");
       if(!element.checked) {
         element.checked = true;
       }
     }
 
-    if(window.scrollY >= 389 && window.scrollY <= 659) {
+    if(window.scrollY >= 390 && window.scrollY <= 659) {
       var element = <HTMLInputElement> document.getElementById("about1");
       if(!element.checked) {
         element.checked = true;
