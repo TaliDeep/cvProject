@@ -22,6 +22,11 @@ export class NavBarComponent implements OnInit {
     element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
   }
 
+  public scrollToSkills () {
+    var element = <HTMLInputElement> document.getElementById("skills");
+    element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+  }
+
   scroll = (): void => {
     
     if(window.scrollY === 0){
