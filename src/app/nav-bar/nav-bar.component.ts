@@ -12,7 +12,7 @@ export class NavBarComponent implements OnInit {
   ngOnInit(): void {
     window.addEventListener('scroll', this.scroll, true)
   }
-
+  
   public scrollToTop () {
     var element = <HTMLInputElement> document.getElementById("home");
     element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
@@ -25,6 +25,11 @@ export class NavBarComponent implements OnInit {
 
   public scrollToSkills () {
     var element = <HTMLInputElement> document.getElementById("skills");
+    element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
+  }
+
+  public scrollToExperiences () {
+    var element = <HTMLInputElement> document.getElementById("experiences");
     element.scrollIntoView({behavior: "smooth", block: "center", inline: "nearest"});
   }
 

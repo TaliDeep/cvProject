@@ -8,7 +8,7 @@
     scroll-behavior: smooth;
     /* opacity: var(--navbar-opacity); */
     background-color: var(--navbar-color);
-    z-index: 3;
+    z-index: 108;
     transition: 0.3s;
 
 }
