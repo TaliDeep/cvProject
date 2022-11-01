@@ -14,7 +14,8 @@ export class NavBarComponent implements OnInit {
   }
 
   public scrollToTop () {
-    document.documentElement.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
+    var element = <HTMLInputElement> document.getElementById("home");
+    element.scrollIntoView({behavior: "smooth", block: "start", inline: "nearest"});
   }
 
   public scrollToAbout () {
@@ -28,25 +29,25 @@ export class NavBarComponent implements OnInit {
   }
 
   scroll = (): void => {
-    
+    // console.log(window.scrollY);
     if(window.scrollY === 0){
       document.body.style.setProperty('--navbar-color', "#100e17");
     }else if(window.scrollY > 0){
       document.body.style.setProperty('--navbar-color', "#202026");
     }
 
-    if(window.scrollY >= 0 && window.scrollY <= 389) {
-      var element = <HTMLInputElement> document.getElementById("home1");
-      if(!element.checked) {
-        element.checked = true;
-      }
-    }
+    // if(window.scrollY >= 0 && window.scrollY <= 389) {
+    //   var element = <HTMLInputElement> document.getElementById("home1");
+    //   if(!element.checked) {
+    //     element.checked = true;
+    //   }
+    // }
 
-    if(window.scrollY >= 390 && window.scrollY <= 659) {
-      var element = <HTMLInputElement> document.getElementById("about1");
-      if(!element.checked) {
-        element.checked = true;
-      }
-    }
+    // if(window.scrollY >= 390 && window.scrollY <= 659) {
+    //   var element = <HTMLInputElement> document.getElementById("about1");
+    //   if(!element.checked) {
+    //     element.checked = true;
+    //   }
+    // }
   }
 }
